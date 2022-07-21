@@ -11,30 +11,53 @@
     <header>
       <div class="header-container">
         <img src="./images/IMAGE.svg" alt="" />
+        <img class="burger" src="./images/cil_hamburger-menu.svg" alt="" />
         <div class="header-buttons">
           <a href="#features">Features</a>
           <a href="#pricing">Pricing</a>
-          <a href="">Testimonials</a>
-          <a href="">FAQ</a>
-          <a href=""><button class="header-btn">get this app</button></a>
+          <a>Testimonials</a>
+          <a>FAQ</a>
+          <a><button class="header-btn">get this app</button></a>
         </div>
+      </div>
+      <div id="mySidenav" class="sidenav">
+        <img class="closebtn" src="./images/codicon_chrome-close.svg" alt="" />
+        <img class="logo" src="./images/IMAGE.svg" alt="" />
+        <a class="mobile-btns" href="#">Features</a>
+        <a class="mobile-btns" href="#">Pricing</a>
+        <a class="mobile-btns" href="#">Testimonials</a>
+        <a class="mobile-btns" href="#">FAQ</a>
+        <a><button class="header-btn mobile">get this app</button></a>
       </div>
     </header>
-    <section id="hidetimer" class="timer">
-      <img class="timer-img" src="./images/Rectangle 1.png" alt="" />
-      <div class="timer-container">
-        <h2 class="timer-title">big sale on lifetime plan</h2>
-        <h5 class="subtitle">there is very little left</h5>
-        <span id="timer" class="time"></span>
-        <div class="time-under">
-          <span>days</span>
-          <span>hours</span>
-          <span>minutes</span>
-          <span>seconds</span>
+    <div class="space"></div>
+    <div class="timer-parent">
+      <section id="hidetimer" class="timer">
+        <div class="timer-container">
+          <h2 class="timer-title">big sale on lifetime plan</h2>
+          <h5 class="subtitle">there is very little left</h5>
+          <div id="timer" class="time">
+            <div class="timer-items">
+              <span class="numbers" id="day"></span>
+              <span class="name">days</span>
+            </div>
+            <div class="timer-items">
+              <span class="numbers" id="hour"></span>
+              <span class="name">hours</span>
+            </div>
+            <div class="timer-items">
+              <span class="numbers" id="minutes"></span>
+              <span class="name">minutes</span>
+            </div>
+            <div class="timer-items">
+              <span class="numbers" id="seconds"></span>
+              <span class="name last">seconds</span>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
-    <section class="about">
+      </section>
+    </div>
+    <!-- <section class="about">
       <div class="about-container">
         <div class="inner-cont">
           <img class="logo" src="./images/sm-logo.svg" alt="" />
@@ -188,6 +211,57 @@
         </div>
       </div>
     </section>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <img class="close" src="./images/codicon_chrome-close.svg" alt="" />
+        <p class="title">
+          Leave a request for the <br />
+          purchase of goods
+        </p>
+        <input class="inp name" type="text" placeholder="name" />
+        <input class="inp email" type="text" placeholder="email" />
+        <p class="title2">Your plan?</p>
+        <button class="modal-btns one">
+          <img src="./images/ci_check-bold.svg" alt="" /> Standard
+        </button>
+        <button class="modal-btns two">
+          <img src="./images/ci_check-bold.svg" alt="" />Premium
+        </button>
+        <button class="modal-btns three">
+          <img src="./images/ci_check-bold.svg" alt="" />Lifetime
+        </button>
+        <form action="/action_page.php">
+          <span class="title4">How did you know about our app?</span>
+          <p>
+            <input type="checkbox" name="age" id="fb" value="30" />
+            <label for="fb">Facebook</label>
+          </p>
+          <p>
+            <input type="checkbox" name="age" id="insta" value="60" />
+            <label for="insta">Instagram</label>
+          </p>
+          <p>
+            <input type="checkbox" id="you" name="age" value="100" />
+            <label for="you">YouTube</label>
+          </p>
+          <p>
+            <input type="checkbox" id="other" name="age" value="30" />
+            <label id="oth" for="other">Other</label>
+          </p>
+        </form>
+        <button class="send-btn">send</button>
+        <p class="loading">
+          <img
+            src="./images/material-symbols_hourglass-top-rounded.svg"
+            alt=""
+          />
+          Loading
+          <span class="dots"> </span>
+          <span class="dots"></span>
+          <span class="dots"></span>
+        </p>
+      </div>
+    </div>
     <section class="footer">
       <div class="footer-container">
         <img src="./images/footer-logo.svg" alt="" />
@@ -197,7 +271,7 @@
           <img class="fb" src="./images/fb.svg" alt="" />
         </div>
       </div>
-    </section>
+    </section> -->
     <script src="./index.js"></script>
   </body>
 </html>
