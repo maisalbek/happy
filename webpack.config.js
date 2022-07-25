@@ -8,7 +8,7 @@ module.exports = {
   mode: "development",
   entry: ["@babel/polyfill", "./src/index.js"],
   output: {
-    path: path.resolve(__dirname, "main"),
+    path: path.resolve(__dirname, "public"),
     filename: "index.js",
   },
   resolve: {
@@ -30,7 +30,7 @@ module.exports = {
       patterns: [
         {
           from: path.resolve(__dirname, "./src/images"),
-          to: path.resolve(__dirname, "main/images"),
+          to: path.resolve(__dirname, "public/images"),
         },
       ],
     }),
